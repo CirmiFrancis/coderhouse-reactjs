@@ -1,13 +1,10 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Main from "./components/Main";
+import After1 from "./After1/After1";
+import './After1/style.css'
 
 const App = () => {
   return (
     <div>
-      <Header />
-      <Main />
-      <Footer />
+      <After1 />
     </div>
   );
 }

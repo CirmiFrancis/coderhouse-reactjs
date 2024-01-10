@@ -13,7 +13,7 @@ const Carousel = () => {
                     <img src={slide2} className="d-block w-100" alt="McCafé, Aguas Frutadas"/>
                 </div>
                 <div className="carousel-item">
-                    <img src={slide3} className="d-block" width={1440} height={651} alt="McFlurry, Chocotorta con Chocolinas"/> {/* Hardcodeé el 'width' y el 'height' porque la imagen tiene 1px menos en el 'height' que las demás */}
+                    <img src={slide3} className="d-block w-100" alt="McFlurry, Chocotorta con Chocolinas"/>
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
