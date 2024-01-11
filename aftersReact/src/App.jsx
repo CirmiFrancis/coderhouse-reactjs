@@ -1,10 +1,10 @@
-import After1 from "./After1/After1";
-import './After1/style.css'
+import After2 from "./After2/After2";
+import './After2/style.css'
 
 const App = () => {
   return (
     <div>
-      <After1 />
+      <After2 />
     </div>
   );
 }
