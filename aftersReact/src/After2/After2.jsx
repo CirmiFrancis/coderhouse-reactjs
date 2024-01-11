@@ -2,7 +2,7 @@ import Footer from "./components/Footer";
 import Main from "./components/Main";
 import NavBar from "./components/NavBar";
 
-const After1 = () => {
+const After2 = () => {
   return (
     <div>
       <NavBar />
@@ -12,4 +12,4 @@ const After1 = () => {
   );
 }
 
-export default After1;
+export default After2;
