@@ -1,9 +1,9 @@
-import TextoModificado from "./TextoModificado";
+import UseState from "./UseState";
 
 const Clase4 = () => {
     return (
         <div>
-            <TextoModificado />
+            <UseState />
         </div>
     )
 }

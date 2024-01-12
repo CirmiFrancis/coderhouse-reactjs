@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Item from "./Item";
 
-const TextoModificado = () => {
+const UseState = () => {
     // const [current_state, function_to_update_state] = useState(initial_value)
     const [texto, setTexto] = useState('Hola :D');
 
@@ -29,4 +29,4 @@ const TextoModificado = () => {
     )
 }
 
-export default TextoModificado;
+export default UseState;
