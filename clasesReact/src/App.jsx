@@ -1,11 +1,11 @@
-import Clase5 from "./Clase5/Clase5"
+import Clase6 from "./Clase6/Clase6"
 //import './Clase4/style.css'
 
 function App() {
 
   return (
     <>
-      <Clase5 />
+      <Clase6 />
     </>
   )
 }
