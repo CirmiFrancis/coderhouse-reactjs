@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    /* width: auto;
+    height: 120px; */
+    width: 75%;
+    aspect-ratio: 2/2;
+    object-fit: contain;
+    /* mix-blend-mode: color-burn; */
+}
+
+.container-product{
+    width: 320px;
+    height: auto;
+    margin: 4px;
+    border: 1px black solid;
+    color: white;
+    background-color: white;
+    transition: all 0.2s;
+}
+
+.container-product:hover{
+    transform: scale(1.02);
+    border: 1px white solid;
+    cursor: pointer;
+}
+
+.container-product p{
+    font-size: 20px;
+}
+
+.custom-bg-title, .custom-bg-price {
+    background-color: rgb(100, 0, 0);
+}
