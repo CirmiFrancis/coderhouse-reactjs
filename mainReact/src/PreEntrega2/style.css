@@ -2,9 +2,11 @@
 
 /* ================================= GLOBAL ================================= */
 
+/*
 html, body{ 
-    overflow-x: hidden; /* esta es una solucion temporal, necesito saber qué causa el desbordamiento */
+    overflow-x: hidden; 
 }
+*/
 
 .main-bg-color { /* Color principal de fondo */
     background-color: rgb(244, 233, 220);
@@ -18,14 +20,15 @@ html, body{
     font-family: 'Lilita One', sans-serif;
 }
 
+.logo { /* Logo BK */
+    transition: all 0.25s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
 /* ================================= HEADER ================================= */
-
-/* Dentro del archivo "Logo.jsx" hay una propiedad 'width', la cual recibe un parametro 'tamanio', al cual le puedo asignar un valor como en "Header.jsx"
-.logo {
-    width: 48px; 
-} 
-*/
-
 .navbar-link{
     font-size: 14px;
     border-radius: 32px;
@@ -35,6 +38,11 @@ html, body{
 .navbar-link:hover {
     color: rgb(198, 0, 0);
     background-color: rgba(0, 0, 0, 0.05);
+}
+
+.navbar-link:focus{
+    color: white;
+    background-color: rgb(200, 47, 0);;
 }
 
 /* ================================= MAIN ================================= */

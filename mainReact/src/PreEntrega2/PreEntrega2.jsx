@@ -1,5 +1,3 @@
-// Agregar Breadcrumb
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./components/Main";
 import NavBar from "./components/NavBar";

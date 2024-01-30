@@ -20,12 +20,20 @@ const ItemCount = ({stock}) => {
         if (counter <= itemStock) {
             setItemStock(itemStock - counter);
             setCounter(1);
-            alert("Agregaste " + counter + " producto/s al carrito. Quedan " + (itemStock - counter) + " producto/s disponible/s.");
-            console.log("Agregaste " + counter + " producto/s al carrito. Quedan " + (itemStock - counter) + " producto/s disponible/s.");
+
+            Swal.fire({
+                title: "Agregaste " + counter + " producto/s al carrito.",
+                text: "Quedan " + (itemStock - counter) + " producto/s disponible/s.",
+                icon: "success"
+            });
         }
         else {
-            alert("No hay stock.");
-            console.log("No hay stock.");
+            Swal.fire({
+                icon: "error",
+                title: "Lo sentimos, no hay stock.",
+                showConfirmButton: false,
+                showCancelButton: true
+            });
         }
     }
 
@@ -38,13 +46,13 @@ const ItemCount = ({stock}) => {
             <div className="row">
                 <div className="col-md-6 d-flex justify-content-end">
                     <div className="btn-group w-25" role="group" aria-label="Basic example">
-                        <button type="button" className="btn btn-warning" onClick={decrementar}>-</button>
-                        <button type="button" className="btn btn-warning">{counter}</button>
-                        <button type="button" className="btn btn-warning" onClick={incrementar}>+</button>
+                        <button type="button" className="btn btn-warning text-danger-emphasis" onClick={decrementar}>-</button>
+                        <button type="button" className="btn btn-warning text-danger-emphasis">{counter}</button>
+                        <button type="button" className="btn btn-warning text-danger-emphasis" onClick={incrementar}>+</button>
                     </div>
                 </div>
                 <div className="col-md-6 d-flex justify-content-start">
-                    <button type="button" className="btn btn-warning w-25" onClick={onAdd}>Agregar al Carrito</button>
+                    <button type="button" className="btn btn-warning w-25 text-danger-emphasis" onClick={onAdd}>Agregar al Carrito</button>
                 </div>
             </div>
         </div>
