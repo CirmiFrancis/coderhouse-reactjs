@@ -1,10 +1,10 @@
-import PreEntrega1 from "./PreEntrega1/PreEntrega1";
-import './PreEntrega1/style.css'
+import PreEntrega2 from "./PreEntrega2/PreEntrega2";
+import './PreEntrega2/style.css'
 
 const App = () => {
   return (
     <div>
-      <PreEntrega1 />
+      <PreEntrega2 />
     </div>
   );
 }
