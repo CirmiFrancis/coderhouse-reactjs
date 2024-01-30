@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+/* ================================= GLOBAL ================================= */
+
+html, body{ 
+    overflow-x: hidden; /* esta es una solucion temporal, necesito saber qué causa el desbordamiento */
+}
+
+.main-bg-color { /* Color principal de fondo */
+    background-color: rgb(244, 233, 220);
+}
+
+.padding-custom { /* Padding frecuente */
+    padding-inline: 10vw;
+}
+
+.font-family-custom { /* Fuente letra BK */
+    font-family: 'Lilita One', sans-serif;
+}
+
+/* ================================= HEADER ================================= */
+
+/* Dentro del archivo "Logo.jsx" hay una propiedad 'width', la cual recibe un parametro 'tamanio', al cual le puedo asignar un valor como en "Header.jsx"
+.logo {
+    width: 48px; 
+} 
+*/
+
+.navbar-link{
+    font-size: 14px;
+    border-radius: 32px;
+    color: rgb(102, 0, 0);
+}
+
+.navbar-link:hover {
+    color: rgb(198, 0, 0);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* ================================= MAIN ================================= */
+
+.coupon-custom {
+    width: 352px;
+    border-radius: 16px;
+}
+
+.locals {
+    border-radius: 12px;
+}
+
+.locals-bg-custom {
+    background-color: rgb(236, 219, 197);
+}
+
+.locals-margin-custom {
+    margin-inline: 9vw;
+}
+
+.news-custom {
+    width: 352px;
+    border-radius: 16px;
+}
+
+.news-custom:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.app-bg {
+    background-color: rgb(230, 23, 0);
+}
+
+.app-font-size-title {
+    font-size: 64px;
+}
+
+.app-store-size {
+    width: 168px;
+    height: 48px;
+}
+
+.app-font-size-desc {
+    font-size: 12px;
+}
+
+/* ================================= FOOTER ================================= */
+.footer {
+    background-color: #502314;
+}
+
+.a-custom {
+    text-decoration: none;
+    color: white;
+}
+
+.a-custom:hover {
+    color: rgb(198, 0, 0);
+}
+
+.rrss-logo {
+    width: 24px; 
+}
