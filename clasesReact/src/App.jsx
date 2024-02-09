@@ -1,10 +1,10 @@
-import Clase9 from "./Clase9/Clase9";
+import Clase12 from "./Clase12/Clase12";
 //import './Clase7/styles.css'
 
 function App() {
   return (
     <div>
-      <Clase9 />
+      <Clase12 />
     </div>
   )
 }
