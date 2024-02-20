@@ -1,0 +1,22 @@
+--- Clase 13: Firebase I ---
+
+Es un servicio provisto por Google. La idea es pasar el contenido del archivo .json que estamos utilizando en nuestro proyecto a una base de datos real (usando Firebase) y consumirlo desde ahí.
+
+Firebase es una plataforma de desarrollo móvil y web desarrollada por Google. Ofrece una amplia gama de servicios y herramientas que facilitan el desarrollo, la implementación y la administración de aplicaciones. Algunas de las características clave de Firebase incluyen:
+    -Base de Datos en Tiempo Real (Realtime Database)
+    -Authentication (Autenticación)
+    -Hosting
+    -Cloud Firestore
+    -Cloud Functions
+    -Storage (Almacenamiento)
+    -Cloud Messaging (mensajería en la nube)
+    -Analytics
+
+Nosotros vamos a utilizar 'Firestore', que es una de las herramientas que nos proporciona 'Firebase'. Esto nos evita tocar el tema de APIs y temas relacionados al Backend, facilitándole la vida al Frontend.
+
+La SPA (Single-page Application) consume una API para llegar a la BD (Base de Datos).
+El Backend es el intermediario entre el Frontend y la BD.
+
+CODIGO:
+
+$ npm install firebase
