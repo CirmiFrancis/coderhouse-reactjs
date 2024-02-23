@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
-const ItemCount = ({stock}) => {
+const ItemCount = ({stock, onAdd}) => {
     const [counter, setCounter] = useState(1);
     const [itemStock, setItemStock] = useState(stock);
+    const [itemAdded, setItemAdded] = useState(false);
 
     const incrementar = () => {
         if (counter < itemStock) {
@@ -16,10 +18,12 @@ const ItemCount = ({stock}) => {
         }
     }
 
-    const onAdd = () => {
+    const addToCart = () => {
         if (counter <= itemStock) {
             setItemStock(itemStock - counter);
             setCounter(1);
+            onAdd(counter);
+            setItemAdded(true);
 
             Swal.fire({
                 title: "Agregaste " + counter + " producto/s al carrito.",
@@ -52,7 +56,9 @@ const ItemCount = ({stock}) => {
                     </div>
                 </div>
                 <div className="col-md-6 d-flex justify-content-start">
-                    <button type="button" className="btn btn-warning w-25 text-danger-emphasis" onClick={onAdd}>Agregar al Carrito</button>
+                    {itemAdded ? 
+                        <Link to={"/cart"} className="btn btn-warning w-25 text-danger-emphasis">Terminar Mi Compra</Link> : 
+                        <button type="button" className="btn btn-warning w-25 text-danger-emphasis" onClick={addToCart}>Agregar al Carrito</button>}
                 </div>
             </div>
         </div>

@@ -56,7 +56,7 @@ html, body{
 }
 
 .locals-bg-custom {
-    background-color: rgb(236, 219, 197);
+    background-color: rgb(236, 219, 197) !important;
 }
 
 .locals-margin-custom {
@@ -131,4 +131,10 @@ html, body{
 
 .padding-detail {
     padding-inline: 20vw;
+}
+
+/* ================================= CART ================================= */
+
+.cart-bg { 
+    background-color: rgb(244, 233, 220) !important;
 }

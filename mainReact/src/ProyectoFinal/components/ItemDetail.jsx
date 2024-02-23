@@ -1,6 +1,14 @@
+import { useContext } from "react";
+import { CartContext } from "./CartContext";
 import ItemCount from "./ItemCount";
 
 const ItemDetail = ({item}) => {
+    const {addItem} = useContext(CartContext); // Uso el contexto para traer la función 'addItem'
+
+    const onAdd = (quantity) => {
+        addItem(item, quantity);
+    }
+
     return (
         <div className="container-fluid main-bg-color">
             <div className="row">
@@ -25,7 +33,7 @@ const ItemDetail = ({item}) => {
             </div>
             <div className="row">
                 <div className="col">
-                    <ItemCount stock={item.stock}/>
+                    <ItemCount stock={item.stock} onAdd={onAdd}/>
                 </div>
             </div>
         </div>
