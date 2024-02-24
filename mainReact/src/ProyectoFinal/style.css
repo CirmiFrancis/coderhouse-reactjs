@@ -9,7 +9,7 @@ html, body{
 */
 
 html {
-    background-color: black;
+    background-color: rgb(30, 30, 30);
 }
 
 :root {
@@ -27,9 +27,8 @@ html {
 }
 
 .main-bg-color { /* Color principal de fondo */
-
-    background: rgb(0,125,70);
-    background: radial-gradient(circle, rgba(0,125,70,1) 0%, rgba(0,105,70,1) 50%, rgba(0,85,70,1) 100%);
+    background: rgb(33,37,41);
+    background: linear-gradient(0deg, rgba(33,37,41,1) 10%, rgba(16,45,66,1) 50%, rgba(33,37,41,1) 90%);
 }
 
 .padding-custom { /* Padding frecuente */
@@ -70,7 +69,7 @@ html {
 .carousel-caption {
     max-width: 100%;
     width:100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     left: 0;
 }
 .carousel-caption h2 {

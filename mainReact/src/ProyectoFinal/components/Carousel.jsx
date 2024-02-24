@@ -1,6 +1,6 @@
-import slide1 from "../assets/carousel/ff7reb.jpg"
-import slide2 from "../assets/carousel/slide2.jpeg"
-import slide3 from "../assets/carousel/slide3.jpeg"
+import slide1 from "../assets/carousel/slide1-ff7rebirth.jpg"
+import slide2 from "../assets/carousel/slide2-p3reload.jpg"
+import slide3 from "../assets/carousel/slide3-tekken8.jpg"
 
 const Carousel = () => {
     return (
@@ -34,25 +34,13 @@ const Carousel = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                <img src={slide1} className="d-block w-100" alt="Hamburguesa, Grand Tasty"/>
-                    <div className="carousel-caption d-none d-md-block">
-                        <h5>FINAL FANTASY VII REBIRTH</h5>
-                        <p>Tras escapar de la distópica ciudad de Midgar, Cloud y sus amigos se embarcan en un viaje por todo el planeta. Les aguardan nuevas aventuras en vasto y vibrante mundo. Recorre las praderas cubiertas de hierba a lomo de chocobo y explora los extensos ambientes.</p>
-                    </div>
+                    <img src={slide1} className="d-block w-100" alt="Hamburguesa, Grand Tasty"/>
                 </div>
                 <div className="carousel-item">
-                <img src={slide1} className="d-block w-100" alt="Hamburguesa, Grand Tasty"/>
-                    <div className="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
+                    <img src={slide2} className="d-block w-100" alt="Hamburguesa, Grand Tasty"/>
                 </div>
                 <div className="carousel-item">
-                <img src={slide1} className="d-block w-100" alt="Hamburguesa, Grand Tasty"/>
-                    <div className="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
+                    <img src={slide3} className="d-block w-100" alt="Hamburguesa, Grand Tasty"/>
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">

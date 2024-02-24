@@ -7,7 +7,8 @@ const FooterPart2 = () => {
     return (
         <div className="row py-4">
             <div className="col-md-6 font-size-custom">
-                <p>TM © 2023 Burger King Corporation. Todos los derechos reservados.</p>
+                <p>Copyright © 2023 GiGames</p>
+                <p>El uso de este sitio web implica la aceptación de los <u>Términos y condiciones</u>  y <u>Política de privacidad</u>. Todos los derechos de autor, marcas comerciales y marcas de servicio pertenecen a sus correspondientes propietarios.</p>
             </div>
             <div className="col-md-6 text-end">
                 <img src={fb} alt="Logo de Facebook" className="rrss-logo mx-2" />

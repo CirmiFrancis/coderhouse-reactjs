@@ -11,9 +11,9 @@ const NavBar = () => {
                 </div>
                 <div className="col-md-8 d-flex align-items-center ps-0">
                     <ul className="nav">
-                        {/* <li className="nav-item">
+                        <li className="nav-item">
                             <NavLink className="nav-link navbar-link" to={"/productos"}>JUEGOS</NavLink>
-                        </li> */}
+                        </li>
                         <li className="nav-item">
                             <NavLink className="nav-link navbar-link" to={"/category/hamburguesas"}>PLAYSTATION</NavLink>
                         </li>
