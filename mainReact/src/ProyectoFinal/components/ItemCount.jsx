@@ -50,15 +50,15 @@ const ItemCount = ({stock, onAdd}) => {
             <div className="row">
                 <div className="col-md-6 d-flex justify-content-end">
                     <div className="btn-group w-25" role="group" aria-label="Basic example">
-                        <button type="button" className="btn btn-warning text-danger-emphasis" onClick={decrementar}>-</button>
-                        <button type="button" className="btn btn-warning text-danger-emphasis">{counter}</button>
-                        <button type="button" className="btn btn-warning text-danger-emphasis" onClick={incrementar}>+</button>
+                        <button type="button" className="btn btn-light text-danger-emphasis" onClick={decrementar}>-</button>
+                        <button type="button" className="btn btn-light text-danger-emphasis">{counter}</button>
+                        <button type="button" className="btn btn-light text-danger-emphasis" onClick={incrementar}>+</button>
                     </div>
                 </div>
                 <div className="col-md-6 d-flex justify-content-start">
                     {itemAdded ? 
-                        <Link to={"/cart"} className="btn btn-warning w-25 text-danger-emphasis">Terminar Mi Compra</Link> : 
-                        <button type="button" className="btn btn-warning w-25 text-danger-emphasis" onClick={addToCart}>Agregar al Carrito</button>}
+                        <Link to={"/cart"} className="btn btn-light w-25 text-danger-emphasis">Terminar Mi Compra</Link> : 
+                        <button type="button" className="btn btn-light w-25 text-danger-emphasis" onClick={addToCart}>Agregar al Carrito</button>}
                 </div>
             </div>
         </div>

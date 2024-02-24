@@ -11,8 +11,6 @@ const CartContextProvider = ({children}) => {
             cart[pos].quantity += quantity; 
             setCart([...cart]);
         } else {
-            // cart.push({...item, quantity:quantity});
-            // setCart([...cart]);
             setCart([...cart, {...item, quantity:quantity}]);
         }
     }

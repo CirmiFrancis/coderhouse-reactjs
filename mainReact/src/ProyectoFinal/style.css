@@ -28,7 +28,7 @@ html {
 
 .main-bg-color { /* Color principal de fondo */
     background: rgb(33,37,41);
-    background: linear-gradient(0deg, rgba(33,37,41,1) 10%, rgba(16,45,66,1) 50%, rgba(33,37,41,1) 90%);
+    background: linear-gradient(0deg, rgba(33,37,41,1) 10%, rgba(16,45,66,1) 30%, rgba(16,45,66,1) 70%, rgba(33,37,41,1) 90%);
 }
 
 .padding-custom { /* Padding frecuente */
@@ -50,18 +50,18 @@ html {
 /* ================================= HEADER ================================= */
 .navbar-link{
     font-size: 14px;
-    border-radius: 32px;
+    border-radius: 16px;
     color: white;
 }
 
 .navbar-link:hover {
-    color: rgb(205, 205, 255);
-    background-color: rgba(0, 0, 0, 0.05);
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar-link:focus{
-    color: white;
-    background-color: rgb(200, 47, 0);;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);;
 }
 
 /* ================================= MAIN ================================= */

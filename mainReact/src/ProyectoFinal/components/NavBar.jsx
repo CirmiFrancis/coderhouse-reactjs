@@ -12,19 +12,19 @@ const NavBar = () => {
                 <div className="col-md-8 d-flex align-items-center ps-0">
                     <ul className="nav">
                         <li className="nav-item">
-                            <NavLink className="nav-link navbar-link" to={"/productos"}>JUEGOS</NavLink>
+                            <NavLink className="nav-link navbar-link" to={"/games"}>JUEGOS</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link navbar-link" to={"/category/hamburguesas"}>PLAYSTATION</NavLink>
+                            <NavLink className="nav-link navbar-link" to={"/platform/playstation"}>PLAYSTATION</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link navbar-link" to={"/category/ensaladas"}>XBOX</NavLink>
+                            <NavLink className="nav-link navbar-link" to={"/platform/xbox"}>XBOX</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link navbar-link" to={"/category/acompanamientos"}>PC</NavLink>
+                            <NavLink className="nav-link navbar-link" to={"/platform/pc"}>PC</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link navbar-link" to={"/category/postres"}>NINTENDO</NavLink>
+                            <NavLink className="nav-link navbar-link" to={"/platform/nintendo"}>NINTENDO</NavLink>
                         </li>
                     </ul>
                 </div>
