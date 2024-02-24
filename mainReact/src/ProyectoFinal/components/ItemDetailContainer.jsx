@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import arrayProductos from "../productos.json";
 import ItemDetail from "./ItemDetail";
-import Breadcrumb from "./Breadcrumb";
+// import Breadcrumb from "./Breadcrumb";
 import Loading from "./Loading";
 
 const ItemDetailContainer = () => {
@@ -36,11 +36,11 @@ const ItemDetailContainer = () => {
 
     return (
         <div className="main-bg-color">
-            <div className="row m-0">
+            {/* <div className="row m-0">
                 <div className="col">
                     <Breadcrumb page={id} />
                 </div>
-            </div>
+            </div> */}
             {loading ? <Loading /> : <ItemDetail item={item} />}
         </div>
     )
