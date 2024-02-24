@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import logoBK from "../assets/bk-logo.png";
+import LogoGG from "../assets/gigames.png";
 
 const Logo = ({tamanio}) => {
     return (
         <Link to={"/"}>
-            <img src={logoBK} alt="Logo de Burger King" className="logo" width={tamanio} />
+            <img src={LogoGG} alt="Logo de Burger King" className="logo" width={tamanio} />
         </Link>
     )
 }

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 import { Link } from "react-router-dom";
-import trash from "../assets/trash.svg";
+import trash from "../assets/icons/trash.svg";
 
 const Cart = () => {
     const {cart, removeItem, clear, CantTotalProductos, SumaTotalProductos} = useContext(CartContext);

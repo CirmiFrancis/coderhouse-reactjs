@@ -8,8 +8,28 @@ html, body{
 }
 */
 
+html {
+    background-color: black;
+}
+
+:root {
+    --main-bg-color: black;
+    --secondary-bg-color: rgb(255, 145, 0);
+    --main-letter-color: rgb(255, 0, 0, 0.6); /* el color es similar a text-danger-emphasis, pero no es el mismo */
+}
+
+.bg-transp {
+    background-color: transparent;
+}
+
+.main-letter {
+    color: var(--main-letter-color);
+}
+
 .main-bg-color { /* Color principal de fondo */
-    background-color: rgb(244, 233, 220);
+
+    background: rgb(0,125,70);
+    background: radial-gradient(circle, rgba(0,125,70,1) 0%, rgba(0,105,70,1) 50%, rgba(0,85,70,1) 100%);
 }
 
 .padding-custom { /* Padding frecuente */
@@ -32,11 +52,11 @@ html, body{
 .navbar-link{
     font-size: 14px;
     border-radius: 32px;
-    color: rgb(102, 0, 0);
+    color: white;
 }
 
 .navbar-link:hover {
-    color: rgb(198, 0, 0);
+    color: rgb(205, 205, 255);
     background-color: rgba(0, 0, 0, 0.05);
 }
 
@@ -46,6 +66,21 @@ html, body{
 }
 
 /* ================================= MAIN ================================= */
+
+.carousel-caption {
+    max-width: 100%;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0;
+}
+.carousel-caption h2 {
+    font-size: 1rem;
+}
+.carousel-caption p {
+    font-size: 1em;
+    margin-inline: 5%;
+}
+
 .coupon-custom {
     width: 352px;
     border-radius: 16px;
@@ -56,7 +91,7 @@ html, body{
 }
 
 .locals-bg-custom {
-    background-color: rgb(236, 219, 197) !important;
+    background-color: var(--secondary-bg-color) !important;
 }
 
 .locals-margin-custom {
@@ -136,5 +171,5 @@ html, body{
 /* ================================= CART ================================= */
 
 .cart-bg { 
-    background-color: rgb(244, 233, 220) !important;
+    background-color: var(--main-bg-color) !important;
 }

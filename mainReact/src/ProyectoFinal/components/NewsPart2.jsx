@@ -9,7 +9,7 @@ const NewsPart2 = () => {
                 <div className="row m-0">
                     <img src={news1} alt="Champi King" className="news-custom p-0" /> 
                 </div>
-                <div className="row text-start text-danger-emphasis mt-4">
+                <div className="row text-start main-letter mt-4">
                     <h4 className="font-family-custom fs-3">¡Conquistá un nuevo reino de sabor con Champi King!</h4>
                     <p> Pan de papa, rúcula, cebolla rehogada, hongos, vos elegís ¿pollo o carne?. ¡Un combo que te va a hacer viajar de sabor! Para más información sobre nuestros insumos sin conservantes colorantes ni saborizantes artificiales, pueden acceder a la web: www.burgerkingcomidareal.com.ar </p>
                 </div>

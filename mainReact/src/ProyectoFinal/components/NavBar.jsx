@@ -4,27 +4,27 @@ import Logo from "./Logo";
 
 const NavBar = () => {
     return (
-        <div className="container-fluid py-3 main-bg-color">
+        <div className="container-fluid py-3 bg-dark">
             <div className="row">
                 <div className="col-md-2 text-end">
-                    <Logo tamanio={48} />
+                    <Logo tamanio={96} />
                 </div>
                 <div className="col-md-8 d-flex align-items-center ps-0">
                     <ul className="nav">
+                        {/* <li className="nav-item">
+                            <NavLink className="nav-link navbar-link" to={"/productos"}>JUEGOS</NavLink>
+                        </li> */}
                         <li className="nav-item">
-                            <NavLink className="nav-link navbar-link" to={"/productos"}>Productos</NavLink>
+                            <NavLink className="nav-link navbar-link" to={"/category/hamburguesas"}>PLAYSTATION</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link navbar-link" to={"/category/hamburguesas"}>Hamburguesas</NavLink>
+                            <NavLink className="nav-link navbar-link" to={"/category/ensaladas"}>XBOX</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link navbar-link" to={"/category/ensaladas"}>Ensaladas</NavLink>
+                            <NavLink className="nav-link navbar-link" to={"/category/acompanamientos"}>PC</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link navbar-link" to={"/category/acompanamientos"}>Acompañamientos</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link navbar-link" to={"/category/postres"}>Postres</NavLink>
+                            <NavLink className="nav-link navbar-link" to={"/category/postres"}>NINTENDO</NavLink>
                         </li>
                     </ul>
                 </div>
