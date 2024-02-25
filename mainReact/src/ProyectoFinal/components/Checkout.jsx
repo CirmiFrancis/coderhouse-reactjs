@@ -14,11 +14,9 @@ const Checkout = () => {
         if (nombre.length === 0) {
             return false;
         }
-
         if (email.length === 0) {
             return false;
         }
-
         if (telefono.length === 0) {
             return false;
         }

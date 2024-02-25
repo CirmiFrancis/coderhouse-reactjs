@@ -1,5 +1,15 @@
+/* ================================= FONTS ================================= */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rowdies:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+.font-gigames {
+    font-family: 'Rowdies', sans-serif;
+}
+.font-platform {
+    font-family: 'Ubuntu', sans-serif;
+}
+.font-text {
+    font-family: 'Montserrat', sans-serif;
+}
 /* ================================= GLOBAL ================================= */
 html { /* Color del Background del HTML (overflow en el eje Y) */
     background-color: rgb(30, 30, 30);
@@ -21,7 +31,7 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
     transform: scale(1.1);
 }
 /* ================================= NAVBAR ================================= */
-.navbar-link{ /* Enlaces del Navbar: Juegos / Playstation / Xbox / PC / Nintendo */
+.navbar-link { /* Enlaces del Navbar: Juegos / Playstation / Xbox / PC / Nintendo */
     font-size: 14px;
     font-family: 'Ubuntu', sans-serif;
     border-radius: 16px;
@@ -31,7 +41,7 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
     color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.1);
 }
-.navbar-link:focus{
+.navbar-link:focus {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);;
 }
@@ -44,25 +54,14 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
     height: 0.5vh !important;
 }
 /* ================================= ABOUT US ================================= */
-.font-gigames {
-    font-family: 'Rowdies', sans-serif;
-}
 .text-justify {
     text-align: justify;
 }
-
-/* ================================= CART ================================= */
-.font-cart {
-    font-family: 'Rowdies', sans-serif;
-}
-.col-trash {
-    width: 11rem;
-}
-/* ================================= GAME (CARD) ================================= */
-.game-card{
+/* ================================= GAMES (CARD) ================================= */
+.game-card {
     transition: all 0.25s;
 }
-.game-card:hover{
+.game-card:hover {
     transform: scale(1.01);
     box-shadow: 0px 0px 6px white;
     cursor: pointer;
@@ -82,4 +81,7 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
 .game-title {
     min-height: 65px;
 }
-
+/* ================================= CART ================================= */
+.col-trash {
+    width: 11rem;
+}

@@ -4,7 +4,7 @@ import LogoGG from "../assets/gigames.png";
 const Logo = ({tamanio}) => {
     return (
         <Link to={"/"}>
-            <img src={LogoGG} alt="Logo de Burger King" className="logo" width={tamanio} />
+            <img src={LogoGG} alt="Logo de GiGames" className="logo" width={tamanio} />
         </Link>
     )
 }

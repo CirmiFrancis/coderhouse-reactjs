@@ -1,5 +1,5 @@
-import slide1 from "../assets/carousel/slide1-ff7rebirth.jpg"
-import slide2 from "../assets/carousel/slide2-ori.jpg"
+import slide1 from "../assets/carousel/slide1-ori.jpg"
+import slide2 from "../assets/carousel/slide2-ff7rebirth.jpg"
 import slide3 from "../assets/carousel/slide3-aoe4.jpg"
 import slide4 from "../assets/carousel/slide4-zelda.jpg"
 
@@ -14,10 +14,10 @@ const Carousel = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={slide1} className="d-block w-100" alt="Final Fantasy VII Rebirth"/>
+                    <img src={slide1} className="d-block w-100" alt="Ori and the Will of the Wisps"/>
                 </div>
                 <div className="carousel-item">
-                    <img src={slide2} className="d-block w-100" alt="Ori and the Will of the Wisps"/>
+                    <img src={slide2} className="d-block w-100" alt="Final Fantasy VII Rebirth"/>
                 </div>
                 <div className="carousel-item">
                     <img src={slide3} className="d-block w-100" alt="Age of Empires IV"/>
