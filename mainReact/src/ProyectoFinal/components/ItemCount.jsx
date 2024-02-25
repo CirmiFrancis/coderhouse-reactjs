@@ -25,7 +25,7 @@ const ItemCount = ({stock, onAdd}) => {
             setItemAdded(true);
 
             Swal.fire({
-                title: "Agregaste " + `<b style="color: darkviolet;"> ${counter} </b>`  + " producto/s al Carrito de Compra.",
+                title: "Agregaste " + `<b style="color: darkred;"> ${counter} </b>` + " producto/s al Carrito de Compra.",
                 text: "Stock: " + (itemStock - counter),
                 icon: "success"
             });

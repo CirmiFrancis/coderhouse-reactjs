@@ -10,7 +10,6 @@ import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
 import Error404 from "./components/Error404";
 
-
 const AfterClase15 = () => {
   return (
     <div className="m-0 p-0">

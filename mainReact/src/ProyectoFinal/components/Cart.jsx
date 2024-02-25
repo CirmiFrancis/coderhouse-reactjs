@@ -25,7 +25,7 @@ const Cart = () => {
         <div className="container-fluid">
             <div className="row">
                 <div className="col bg-dark text-light text-center font-gigames px-5 py-3">
-                    <h1 className="m-0">CARRiTO DE COMPRAS</h1>
+                    <h2 className="fs-1 m-0">CARRiTO DE COMPRAS</h2>
                 </div>
             </div>
             <div className="row">
