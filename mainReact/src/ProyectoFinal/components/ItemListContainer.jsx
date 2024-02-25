@@ -22,7 +22,7 @@ const ItemListContainer = () => {
     }, [id]);
 
     return (
-        <div className="main-bg-color">
+        <div className="bg-gradient pt-5 pb-5 border-top border-bottom">
             {loading ? <Loading /> : <ItemList items={items} />}
         </div>
     )

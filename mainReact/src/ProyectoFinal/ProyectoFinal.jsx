@@ -6,8 +6,10 @@ import ItemDetailContainer from "./components/ItemDetailContainer";
 import Cart from "./components/Cart";
 import CartContextProvider from "./components/CartContext";
 import Checkout from "./components/Checkout";
+import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
 import Error404 from "./components/Error404";
+
 
 const AfterClase15 = () => {
   return (
@@ -24,6 +26,7 @@ const AfterClase15 = () => {
             <Route path={"/checkout"} element={<Checkout/>}/>    
             <Route path={"*"} element={<Error404/>}/>  
           </Routes>
+          <AboutUs/>
           <Footer/>
         </BrowserRouter>
       </CartContextProvider>

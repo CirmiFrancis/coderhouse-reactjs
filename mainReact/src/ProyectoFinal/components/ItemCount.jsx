@@ -26,8 +26,8 @@ const ItemCount = ({stock, onAdd}) => {
             setItemAdded(true);
 
             Swal.fire({
-                title: "Agregaste " + counter + " producto/s al carrito.",
-                text: "Quedan " + (itemStock - counter) + " producto/s disponible/s.",
+                title: "Agregaste " + `<b style="color: darkviolet;"> ${counter} </b>`  + " producto/s al Carrito de Compra.",
+                text: "Stock: " + (itemStock - counter),
                 icon: "success"
             });
         }
@@ -46,19 +46,17 @@ const ItemCount = ({stock, onAdd}) => {
     }, [stock]);
 
     return (
-        <div className="container-fluid mb-5">
+        <div className="container-fluid my-4">
             <div className="row">
                 <div className="col-md-6 d-flex justify-content-end">
                     <div className="btn-group w-25" role="group" aria-label="Basic example">
-                        <button type="button" className="btn btn-light text-danger-emphasis" onClick={decrementar}>-</button>
-                        <button type="button" className="btn btn-light text-danger-emphasis">{counter}</button>
-                        <button type="button" className="btn btn-light text-danger-emphasis" onClick={incrementar}>+</button>
+                        <button type="button" className="btn btn-light text-dark" onClick={decrementar}>-</button>
+                        <button type="button" className="btn btn-light text-dark">{counter}</button>
+                        <button type="button" className="btn btn-light text-dark" onClick={incrementar}>+</button>
                     </div>
                 </div>
                 <div className="col-md-6 d-flex justify-content-start">
-                    {itemAdded ? 
-                        <Link to={"/cart"} className="btn btn-light w-25 text-danger-emphasis">Terminar Mi Compra</Link> : 
-                        <button type="button" className="btn btn-light w-25 text-danger-emphasis" onClick={addToCart}>Agregar al Carrito</button>}
+                    <button type="button" className="btn btn-light w-25 text-dark" onClick={addToCart}>Agregar al Carrito</button>
                 </div>
             </div>
         </div>

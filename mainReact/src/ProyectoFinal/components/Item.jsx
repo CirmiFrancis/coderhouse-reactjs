@@ -2,12 +2,15 @@ import { Link } from "react-router-dom";
 
 const Item = ({item}) => {
     return (
-        <div className="col-md-3 text-center product-card p-1">
-            <div className="card border-0 locals-bg-custom">
+        <div className="col-md-2 text-center p-2">
+            <div className="border rounded game-card">
                 <Link to={"/game/" + item.id} className="text-decoration-none">
-                    <img src={item.image} className="card-img-top" alt={item.title} />
-                    <div className="card-body font-family-custom text-danger-emphasis fs-5">
-                        <p className="card-text">{item.title}</p>
+                    <div className="game-title rounded d-flex justify-content-center">
+                        <p className="title d-flex align-items-center">{item.title}</p>
+                    </div>
+                    <img src={item.image} className="card-img-top border-top border-bottom border-light" alt={item.title} />
+                    <div className="game-price rounded d-flex justify-content-center">
+                        <p className="price d-flex align-items-center py-2">${item.price}</p>
                     </div>
                 </Link>
             </div>

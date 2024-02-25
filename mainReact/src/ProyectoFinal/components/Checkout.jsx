@@ -40,7 +40,7 @@ const Checkout = () => {
     }
 
     return (
-        <div className="container">
+        <div className="container-fluid bg-gradient">
             <div className="row">
                 <div className="col text-center">
                     <h1>Checkout</h1>

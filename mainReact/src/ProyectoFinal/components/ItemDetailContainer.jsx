@@ -20,7 +20,7 @@ const ItemDetailContainer = () => {
     }, [id]);
 
     return (
-        <div className="main-bg-color">
+        <div className="bg-gradient">
             {loading ? <Loading /> : <ItemDetail item={item} />}
         </div>
     )
