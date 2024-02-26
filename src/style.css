@@ -12,7 +12,7 @@
 }
 /* ================================= GLOBAL ================================= */
 html { /* Color del Background del HTML (overflow en el eje Y) */
-    background-color: rgb(30, 30, 30);
+    background-color: rgba(33,37,41);
 }
 :root { /* Variable de estilos utilizados con frecuencia */
     --bg-gradient: linear-gradient(0deg, rgba(33,37,41,1) 0%, rgba(27,25,40,1) 50%, rgba(33,37,41,1) 100%);;
