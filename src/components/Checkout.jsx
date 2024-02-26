@@ -45,7 +45,7 @@ const Checkout = () => {
         <div className="container-fluid bg-dark">
             <div className="row">
                 <div className="col text-center text-light font-gigames">
-                    <h2 className="fs-1">Confirmar Compra</h2>
+                    <h2 className="fs-1">CONFiRMAR COMPRA</h2>
                 </div>
             </div>
             {orderId ? 
