@@ -13,4 +13,4 @@ En esta página puedes:
 Además, utilicé Firebase (Firestore) como base de datos para guardar la información de cada videojuego y las órdenes de compra generadas.
 
 ### Netlify: 
-[https://cirmifrancis.github.io/coderhouse-javascript/](https://monumental-gumption-288cd4.netlify.app/)
+https://monumental-gumption-288cd4.netlify.app/
