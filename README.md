@@ -6,7 +6,7 @@ Proyecto realizado para el curso de "React JS" de la plataforma Coderhouse.
 En esta página puedes:
 - Ver el catálogo completo de videojuegos
 - Ver el detalle de cada juego (nombre, precio, descripción)
-- Agregar los juegos que quieras al Carrito de Compras (siempre y cuando no superen al stock disponible)
+- Agregar juegos al Carrito de Compras
 - Visualizar el detalle del Carrito de Compras
 - Generar una Orden de Compra, luego de completar un pequeño formulario
 
