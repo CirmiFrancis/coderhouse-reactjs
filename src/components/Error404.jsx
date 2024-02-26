@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Error404 = () => {
     return (
-        <div className="container-fluid bg-gradient py-5">
+        <div className="container-fluid bg-dark py-5">
             <div className="row">
                 <div className="col text-center text-light">
                     <h2 className="fs-1">❌ Error 404 ❌</h2>

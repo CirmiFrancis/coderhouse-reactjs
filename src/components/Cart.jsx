@@ -10,11 +10,11 @@ const Cart = () => {
     if (CantTotalProductos() == 0) {
         return (
 
-            <div className="container-fluid bg-gradient pt-5">
+            <div className="container-fluid bg-dark pt-5">
                 <div className="row">
                     <div className="col text-center text-light">
                         <h2 className="">No hay productos en el Carrito de Compra...</h2>
-                        <Link to={"/"} className="btn btn-dark mt-3 mb-5">Volver al Inicio</Link>
+                        <Link to={"/"} className="btn btn-light mt-3 mb-5">Volver al Inicio</Link>
                     </div>
                 </div>
             </div>
