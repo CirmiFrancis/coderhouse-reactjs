@@ -1,8 +1,16 @@
-# React + Vite
+# GiGames: e-commerce de videojuegos
+Proyecto realizado para el curso de "React JS" de la plataforma Coderhouse.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+'GiGames' es una tienda en línea ficticia dedicada a la venta de videojuegos en formato físico ubicada en Buenos Aires, Argentina. 
 
-Currently, two official plugins are available:
+En esta página puedes:
+- Ver el catálogo completo de videojuegos
+- Ver el detalle de cada juego (nombre, precio, descripción)
+- Agregar los juegos que quieras al Carrito de Compras (siempre y cuando no superen al stock disponible)
+- Visualizar el detalle del Carrito de Compras
+- Generar una Orden de Compra, luego de completar un pequeño formulario
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Además, utilicé Firebase (Firestore) como base de datos para guardar la información de cada videojuego y las órdenes de compra generadas.
+
+### Netlify: 
+[https://cirmifrancis.github.io/coderhouse-javascript/](https://monumental-gumption-288cd4.netlify.app/)
