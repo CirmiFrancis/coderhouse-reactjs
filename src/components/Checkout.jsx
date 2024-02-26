@@ -1,13 +1,14 @@
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { useContext, useState } from "react";
 import { CartContext } from "./CartContext";
-import { Link } from "react-router-dom";
+import Loading from "./Loading";
 
 const Checkout = () => {
     const [nombre, setNombre] = useState();
     const [email, setEmail] = useState();
     const [telefono, setTelefono] = useState();
     const [orderId, setOrderId] = useState();
+    const [loading, setLoading] = useState(true);
     const {cart, clear, CantTotalProductos, SumaTotalProductos} = useContext(CartContext);
 
     const generarOrden = () => {
@@ -20,6 +21,8 @@ const Checkout = () => {
         if (telefono.length === 0) {
             return false;
         }
+
+        setLoading(false);
 
         const buyer = {name:nombre, email:email, phone:telefono};
         const items = cart.map(item => ({id:item.idx, title:item.title, price:item.price, quantity:item.quantity}));
@@ -85,7 +88,10 @@ const Checkout = () => {
                                     <label className="form-label">Teléfono</label>
                                     <input type="text" className="form-control" onInput={(e) => {setTelefono(e.target.value)}} />
                                 </div>
-                                <button type="button" className="btn btn-light mt-5 mb-3" onClick={generarOrden}>Generar Orden</button>
+                                {loading ?
+                                    <button type="button" className="btn btn-light mt-5 mb-3" onClick={generarOrden}>Generar Orden</button>
+                                    : <Loading />
+                                }
                             </form>
                         </div>
                     </div>
