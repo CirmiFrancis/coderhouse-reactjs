@@ -3,7 +3,7 @@ import Logo from "./Logo";
 const AboutUs = () => {
     return (
         <div className="container-fluid bg-dark padding-custom">
-            <div className="row py-5">
+            <div className="row pt-5 pb-3">
                 <div className="col-md-8 text-justify text-light pb-5">
                     <h2 className="font-gigames">GiGames...</h2>
                     <p className="font-text m-0 pb-4">
