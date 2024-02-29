@@ -9,7 +9,7 @@ const Item = ({item}) => {
                         <p className="title d-flex align-items-center">{item.title}</p>
                     </div>
                     <img src={item.image} className="card-img-top border-top border-bottom border-light" alt={item.title} />
-                    <div className="game-price  d-flex justify-content-center rounded">
+                    <div className="game-price d-flex justify-content-center rounded">
                         <p className="price d-flex align-items-center py-2">${item.price}</p>
                     </div>
                 </Link>

@@ -80,15 +80,15 @@ const Checkout = () => {
                             <form>
                                 <div className="mb-3">
                                     <label className="form-label">Nombre</label>
-                                    <input type="text" className="form-control" onInput={(e) => {setNombre(e.target.value)}} />
+                                    <input type="text" placeholder="Ej: Amo Gigames" className="form-control" onInput={(e) => {setNombre(e.target.value)}} />
                                 </div>
                                 <div className="mb-3">
                                     <label className="form-label">Email</label>
-                                    <input type="text" className="form-control" onInput={(e) => {setEmail(e.target.value)}} />
+                                    <input type="email" placeholder="Ej: amogigames@gmail.com" className="form-control" onInput={(e) => {setEmail(e.target.value)}} />
                                 </div>
                                 <div className="mb-3">
                                     <label className="form-label">Teléfono</label>
-                                    <input type="text" className="form-control" onInput={(e) => {setTelefono(e.target.value)}} />
+                                    <input type="number" placeholder="Ej: +54 11 1234-5678" className="form-control" onInput={(e) => {setTelefono(e.target.value)}} />
                                 </div>
                                 {loading ?
                                     <button type="button" className="btn btn-light mt-5 mb-3" onClick={generarOrden}>Generar Orden</button>
