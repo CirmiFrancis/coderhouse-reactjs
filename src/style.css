@@ -82,6 +82,12 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
     min-height: 65px;
 }
 /* ================================= CART ================================= */
+.trash {
+    transition: all 0.25s;
+}
+.trash:hover {
+    transform: scale(1.2);
+}
 .col-trash {
     width: 11rem;
 }

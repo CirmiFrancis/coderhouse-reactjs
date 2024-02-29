@@ -10,11 +10,11 @@ const Cart = () => {
     if (CantTotalProductos() == 0) {
         return (
 
-            <div className="container-fluid bg-dark pt-5">
+            <div className="container-fluid bg-white">
                 <div className="row">
-                    <div className="col text-center text-light">
-                        <h2 className="">No hay productos en el Carrito de Compra...</h2>
-                        <Link to={"/"} className="btn btn-light mt-3 mb-5">Volver al Inicio</Link>
+                    <div className="col text-center text-dark bg-white my-5">
+                        <h2>No hay productos en el Carrito de Compra...</h2>
+                        <Link to={"/"} className="btn btn-dark mt-3">Volver al Inicio</Link>
                     </div>
                 </div>
             </div>
@@ -46,20 +46,22 @@ const Cart = () => {
                         <tbody>
                             {cart.map(product =>
                                 <tr key={product.id}>
-                                    <td className="  align-middle bg-dark"><img src={product.image} alt={product.title} width={100} /></td>
-                                    <td className="  align-middle bg-dark text-light">{product.title}</td>
-                                    <td className="  align-middle bg-dark text-light">${product.price}</td>
-                                    <td className="  align-middle bg-dark text-light">{product.quantity}</td>
-                                    <td className="  align-middle bg-dark text-light">${(product.quantity * product.price).toFixed(2)}</td>
-                                    <td className="  align-middle bg-dark col-trash">
+                                    <td className="align-middle bg-dark"><img src={product.image} alt={product.title} width={100} /></td>
+                                    <td className="align-middle bg-dark text-light">{product.title}</td>
+                                    <td className="align-middle bg-dark text-light">${product.price}</td>
+                                    <td className="align-middle bg-dark text-light">{product.quantity}</td>
+                                    <td className="align-middle bg-dark text-light">${(product.quantity * product.price).toFixed(2)}</td>
+                                    <td className="align-middle bg-dark col-trash">
                                         <a href="#" onClick={() => {removeItem(product.id)}}><img src={trash2} width={24} className="trash" alt="Eliminar Producto" title="Eliminar Producto" /></a>
                                     </td>
                                 </tr>
                             )}
                             <tr>
-                                <td colSpan={4} className="  align-middle bg-dark text-light"></td>
-                                <td className="  bg-dark text-light font-platform fw-bold fs-4 m-0 py-3">${SumaTotalProductos().toFixed(2)}</td>
-                                <td className="bg-dark text-center align-middle px-0"><Link to={"/checkout"} className="btn btn-light">Confirmar Compra</Link></td>
+                                <td colSpan={4} className="align-middle bg-dark text-light"></td>
+                                <td className="bg-dark text-light font-platform fw-bold fs-4 m-0 py-3">${SumaTotalProductos().toFixed(2)}</td>
+                                <td className="align-middle bg-dark text-center px-0">
+                                    <Link to={"/checkout"} className="btn btn-light">Confirmar Compra</Link>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

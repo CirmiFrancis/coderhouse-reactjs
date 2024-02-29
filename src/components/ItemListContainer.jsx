@@ -19,6 +19,8 @@ const ItemListContainer = () => {
             setLoading(false);
             setItems(resultado.docs.map(producto => ({id:producto.id, ...producto.data()})));
         });
+
+        window.scrollTo({top: 0, behavior: 'smooth'}); // al hacer clic en una sección, te lleva al inicio de la página
     }, [id]);
 
     return (

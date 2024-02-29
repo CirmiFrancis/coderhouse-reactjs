@@ -9,7 +9,7 @@ const Checkout = () => {
     const [telefono, setTelefono] = useState();
     const [orderId, setOrderId] = useState();
     const [loading, setLoading] = useState(true);
-    const {cart, clear, CantTotalProductos, SumaTotalProductos} = useContext(CartContext);
+    const {cart, clear, SumaTotalProductos} = useContext(CartContext);
 
     const generarOrden = () => {
         if (nombre.length === 0) {
@@ -39,6 +39,8 @@ const Checkout = () => {
             clear();
             setOrderId(resultado.id);
         });
+
+        window.scrollTo({top: 0, behavior: 'smooth'}); // al hacer clic en 'generar orden', vuelve al inicio de la página
     }
 
     return (
@@ -100,8 +102,8 @@ const Checkout = () => {
             
             <div className="row">
                 {orderId ? 
-                    <div className="div bg-light text-dark text-center py-5 my-5">
-                        <h2 className="fs-1 m-0">¡Gracias por comprar en GiGames!</h2>
+                    <div className="bg-light text-dark text-center py-5 my-5">
+                        <h2 className="fs-1 m-0">¡Gracias por comprar en <span className="font-gigames">GiGames</span>!</h2>
                         <p className="fs-5 m-2">Tu ID de Compra es: <b>{orderId}</b></p>
                     </div>
                     : ""}

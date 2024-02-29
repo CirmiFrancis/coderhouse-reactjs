@@ -25,17 +25,25 @@ const ItemCount = ({stock, onAdd}) => {
             setItemAdded(true);
 
             Swal.fire({
+                toast: true,
+                position: "bottom-end",
+                timer: 3000,
                 title: "Agregaste " + `<b style="color: darkred;"> ${counter} </b>` + " producto/s al Carrito de Compra.",
                 text: "Stock: " + (itemStock - counter),
-                icon: "success"
+                icon: "success",
+                showConfirmButton: false,
+                timerProgressBar: true
             });
         }
         else {
             Swal.fire({
-                icon: "error",
+                toast: true,
+                position: "bottom-end",
+                timer: 3000,
                 title: "Lo sentimos, no hay stock.",
+                icon: "error",
                 showConfirmButton: false,
-                showCancelButton: true
+                timerProgressBar: true
             });
         }
     }

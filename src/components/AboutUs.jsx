@@ -16,8 +16,9 @@ const AboutUs = () => {
                         Poco a poco iremos completando nuestro catálogo y ofreceremos, además de videojuegos, productos relacionados al mundo gaming como: consolas y accesorios, periféricos, ediciones deluxe y promociones especiales.
                     </p>
                 </div>
+                
                 <div className="col-md-4 d-flex justify-content-center align-items-center">
-                        <Logo tamanio={192} />
+                    <Logo tamanio={192} />
                 </div>
                 <hr className="text-light" />
             </div>
