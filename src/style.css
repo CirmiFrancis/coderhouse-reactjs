@@ -23,6 +23,9 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
 .padding-custom { /* Padding utilizado en AboutUs, Footer & ItemDetail */
     padding-inline: 10vw;
 }
+.text-justify {
+    text-align: justify;
+}
 /* ================================= LOGO ================================= */
 .logo { /* Logo de GiGames */
     transition: all 0.25s;
@@ -52,10 +55,6 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
 .carousel-indicators button {
     width: 1.5vw !important;
     height: 0.5vh !important;
-}
-/* ================================= ABOUT US ================================= */
-.text-justify {
-    text-align: justify;
 }
 /* ================================= GAMES (CARD) ================================= */
 .game-card {

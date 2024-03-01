@@ -3,8 +3,8 @@ import Logo from "./Logo";
 const AboutUs = () => {
     return (
         <div className="container-fluid bg-dark padding-custom">
-            <div className="row pt-5 pb-3">
-                <div className="col-md-8 text-justify text-light pb-5">
+            <div className="row py-5">
+                <div className="col-md-9 text-justify text-light">
                     <h2 className="font-gigames">GiGames...</h2>
                     <p className="font-text m-0 pb-4">
                         ...es una tienda en línea de videojuegos en formato físico ubicada en Buenos Aires, Argentina.
@@ -17,11 +17,11 @@ const AboutUs = () => {
                     </p>
                 </div>
                 
-                <div className="col-md-4 d-flex justify-content-center align-items-center">
+                <div className="col-md-3 d-flex justify-content-center align-items-center">
                     <Logo tamanio={192} />
                 </div>
-                <hr className="text-light" />
             </div>
+            <hr className="text-light m-0 p-0" />
         </div>
     )
 }

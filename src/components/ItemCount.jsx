@@ -55,15 +55,13 @@ const ItemCount = ({stock, onAdd}) => {
     return (
         <div className="container-fluid my-4">
             <div className="row">
-                <div className="col-md-6 d-flex justify-content-end">
-                    <div className="btn-group w-25" role="group" aria-label="Basic example">
+                <div className="col-md-12 d-flex justify-content-start gap-2">
+                    <div className="btn-group" role="group" aria-label="Basic example">
                         <button type="button" className="btn btn-light text-dark" onClick={decrementar}>-</button>
                         <button type="button" className="btn btn-light text-dark">{counter}</button>
                         <button type="button" className="btn btn-light text-dark" onClick={incrementar}>+</button>
                     </div>
-                </div>
-                <div className="col-md-6 d-flex justify-content-start">
-                    <button type="button" className="btn btn-light w-25 text-dark" onClick={addToCart}>Agregar al Carrito</button>
+                    <button type="button" className="btn btn-light text-dark" onClick={addToCart}>Agregar al Carrito</button>
                 </div>
             </div>
         </div>

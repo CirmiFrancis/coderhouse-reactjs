@@ -34,10 +34,10 @@ const Cart = () => {
                         <thead>
                             <tr>
                                 <td className="align-middle bg-dark text-light fw-bold fs-5" scope="col"></td>
-                                <td className="  align-middle bg-dark text-light fw-bold fs-5 font-platform" scope="col">Nombre del Juego</td>
-                                <td className="  align-middle bg-dark text-light fw-bold fs-5 font-platform" scope="col">Precio Unitario</td>
-                                <td className="  align-middle bg-dark text-light fw-bold fs-5 font-platform" scope="col">Cantidad</td>
-                                <td className="  align-middle bg-dark text-light fw-bold fs-5 font-platform" scope="col">Precio Total</td>
+                                <td className="align-middle bg-dark text-light fw-bold fs-5 font-platform" scope="col">Nombre del Juego</td>
+                                <td className="align-middle bg-dark text-light fw-bold fs-5 font-platform" scope="col">Precio Unitario</td>
+                                <td className="align-middle bg-dark text-light fw-bold fs-5 font-platform" scope="col">Cantidad</td>
+                                <td className="align-middle bg-dark text-light fw-bold fs-5 font-platform" scope="col">Precio Total</td>
                                 <td className="  bg-dark text-center align-middle px-0 py-3">
                                     <a href="#" onClick={clear} className="btn btn-light">Vaciar Carrito <img src={trash} alt="Vaciar Carrito" title="Vaciar Carrito" /></a>
                                 </td>

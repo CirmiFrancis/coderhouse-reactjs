@@ -6,12 +6,12 @@ import tw from "../assets/rrss/tw.png"
 const Footer = () => {
     return (
         <div className="container-fluid bg-dark text-light padding-custom">
-            <div className="row pb-4">
-                <div className="col-md-8">
+            <div className="row py-4">
+                <div className="col-md-9">
                     <p>Copyright © 2023 GiGames</p>
-                    <p>El uso de este sitio web implica la aceptación de los <u>Términos y condiciones</u>  y <u>Política de privacidad</u>. Todos los derechos de autor, marcas comerciales y marcas de servicio pertenecen a sus correspondientes propietarios.</p>
+                    <p className="m-0">El uso de este sitio web implica la aceptación de los <u>Términos y condiciones</u>  y <u>Política de privacidad</u>. Todos los derechos de autor, marcas comerciales y marcas de servicio pertenecen a sus correspondientes propietarios.</p>
                 </div>
-                <div className="col-md-4 text-center">
+                <div className="col-md-3 d-flex justify-content-center align-items-center">
                     <img src={fb} alt="Logo de Facebook" className="mx-2" width={24} />
                     <img src={ig} alt="Logo de Instagram" className="mx-2" width={24} />
                     <img src={yt} alt="Logo de Youtube" className="mx-2" width={24} />
