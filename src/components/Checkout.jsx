@@ -80,11 +80,11 @@ const Checkout = () => {
                             <form>
                                 <div className="mb-3">
                                     <label className="form-label">Nombre</label>
-                                    <input type="text" placeholder="Ej: Amo Gigames" className="form-control" onInput={(e) => {setNombre(e.target.value)}} />
+                                    <input type="text" placeholder="Ej: Gi Games" className="form-control" onInput={(e) => {setNombre(e.target.value)}} />
                                 </div>
                                 <div className="mb-3">
                                     <label className="form-label">Email</label>
-                                    <input type="email" placeholder="Ej: amogigames@gmail.com" className="form-control" onInput={(e) => {setEmail(e.target.value)}} />
+                                    <input type="email" placeholder="Ej: gigames@gmail.com" className="form-control" onInput={(e) => {setEmail(e.target.value)}} />
                                 </div>
                                 <div className="mb-3">
                                     <label className="form-label">Teléfono</label>
