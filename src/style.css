@@ -95,6 +95,9 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
 }
 /* ================================= MEDIA QUERIES ================================= */
 @media (min-width: 768px) and (max-width: 1439.98px){
+    .title {
+        font-size: 0.7em;
+    }
     .img-size {
         width: 30vw;
     }
