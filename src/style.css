@@ -80,6 +80,9 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
 .game-title {
     min-height: 65px;
 }
+.platform-size {
+    font-size: 16px;
+}
 /* ================================= CART ================================= */
 .trash {
     transition: all 0.25s;
@@ -89,4 +92,22 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
 }
 .col-trash {
     width: 11rem;
+}
+/* ================================= MEDIA QUERIES ================================= */
+@media (min-width: 768px) and (max-width: 1439.98px){
+    .img-size {
+        width: 30vw;
+    }
+    .title-size {
+        font-size: 1.8em;
+    }
+    .platform-size {
+        font-size: 0.8em;
+    }
+    .price-size {
+        font-size: 0.8em;
+    }
+    .description-size {
+        font-size: 0.7em;
+    }
 }
