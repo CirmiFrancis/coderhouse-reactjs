@@ -14,7 +14,7 @@ const ItemDetail = ({item}) => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        //borderBlock: '1px solid white'
+        borderBlock: '1px solid white'
     };
 
     return (
@@ -28,7 +28,7 @@ const ItemDetail = ({item}) => {
                     <div className="row text-light font-gigames">
                         <h2 className="title-size m-0">{item.title}</h2>
                     </div>
-                    <div className="row text-light font-platform pt-2">
+                    <div className="row text-light font-platform pt-1">
                         <h2 className="platform-size m-0">{item.platform.toUpperCase()}</h2>
                     </div>
                     <div className="row text-light font-platform fs-3 pt-3">

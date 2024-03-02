@@ -1,7 +1,7 @@
-import slide1 from "../assets/carousel/slide1-ori.jpg"
-import slide2 from "../assets/carousel/slide2-ff7rebirth.jpg"
-import slide3 from "../assets/carousel/slide3-aoe4.jpg"
-import slide4 from "../assets/carousel/slide4-zelda.jpg"
+import slide1 from "../assets/carousel/slide1-ori.webp"
+import slide2 from "../assets/carousel/slide2-ff7.webp"
+import slide3 from "../assets/carousel/slide3-aoe4.webp"
+import slide4 from "../assets/carousel/slide4-zelda.webp"
 
 const Carousel = () => {
     return (
