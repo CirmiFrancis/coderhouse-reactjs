@@ -9,8 +9,16 @@ const ItemDetail = ({item}) => {
         addItem(item, quantity);
     }
 
+    const customBg = { // Objeto que define estilos
+        background: `url(${item.background})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        borderBlock: '1px solid white'
+    };
+
     return (
-        <div className="container-fluid bg-gradient py-5 padding-custom">
+        <div className="container-fluid py-5 padding-custom" style={customBg}>
             <div className="row">
                 <div className="col-md-5 text-center">
                     <img src={item.image} alt={item.title} className="img-size border border-light rounded" />
