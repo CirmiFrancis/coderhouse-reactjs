@@ -14,7 +14,7 @@ const ItemDetail = ({item}) => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        borderBlock: '1px solid white'
+        //borderBlock: '1px solid white'
     };
 
     return (
