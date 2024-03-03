@@ -59,7 +59,7 @@ const Checkout = () => {
                                 <tbody>
                                     {cart.map(product =>
                                         <tr key={product.id}>
-                                            <td className="bg-dark align-middle"><img src={product.image} alt={product.title} width={80} /></td>
+                                            <td className="bg-dark align-middle"><img src={product.image} alt={product.title} className="width-img-checkout" /></td>
                                             <td className="bg-dark text-light text-start align-middle">{product.title}</td>
                                             <td className="bg-dark text-light text-start align-middle">${product.price}</td>
                                             <td className="bg-dark text-light text-start align-middle">{product.quantity}</td>
