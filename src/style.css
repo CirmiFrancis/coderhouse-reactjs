@@ -114,3 +114,8 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
         font-size: 0.7em;
     }
 }
+@media (max-width: 767.98px){
+    .w-card-custom {
+        width: 80%;
+    }
+}
