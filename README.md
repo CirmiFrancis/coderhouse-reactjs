@@ -17,7 +17,7 @@ https://monumental-gumption-288cd4.netlify.app/
 
 ### Certificado de aprobación del Curso: 
 
-En proceso...
+![Imagen del Certificado](https://github.com/CirmiFrancis/coderhouse-reactjs/blob/final/certificate.png?raw=true)
 
 > [!NOTE]
 > #### Curiosidad:
