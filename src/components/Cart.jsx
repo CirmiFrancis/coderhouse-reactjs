@@ -58,7 +58,7 @@ const Cart = () => {
                             )}
                             <tr>
                                 <td colSpan={4} className="align-middle bg-dark text-light"></td>
-                                <td className="bg-dark text-light font-platform fw-bold fs-6 m-0 py-3">${SumaTotalProductos().toFixed(2)}</td>
+                                <td className="bg-dark text-light font-platform fw-bold fs-5 m-0 py-3">${SumaTotalProductos().toFixed(2)}</td>
                                 <td className="align-middle bg-dark text-center px-0">
                                     <Link to={"/checkout"} className="btn btn-light">Confirmar Compra</Link>
                                 </td>

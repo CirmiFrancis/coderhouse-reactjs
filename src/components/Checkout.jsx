@@ -68,7 +68,7 @@ const Checkout = () => {
                                     )}
                                     <tr>
                                         <td className="bg-dark text-center align-middle" colSpan={4}>&nbsp;</td>
-                                        <td className="bg-dark text-light text-start align-middle">${SumaTotalProductos().toFixed(2)}</td>
+                                        <td className="bg-dark text-light text-start align-middle fw-bold fs-5">${SumaTotalProductos().toFixed(2)}</td>
                                     </tr>
                                 </tbody>
                             </table>
