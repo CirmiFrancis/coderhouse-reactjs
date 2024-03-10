@@ -13,7 +13,7 @@ Este sitio web permite:
 Además, utilicé Firebase (Firestore) como base de datos para guardar la información de cada videojuego y las órdenes de compra generadas.
 
 ### Netlify (deployment): 
-https://monumental-gumption-288cd4.netlify.app/
+https://gigames.netlify.app/
 
 ### Certificado de aprobación del Curso: 
 
