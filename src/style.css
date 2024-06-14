@@ -85,6 +85,7 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
 }
 /* ================================= CART & CHECKOUT ================================= */
 .trash {
+    width: 24px;
     transition: all 0.25s;
 }
 .trash:hover {
@@ -146,7 +147,8 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
         width: 100vw;
     }
     .width-img-cart {
-        width: 60px;
+        width: 40px;
+        padding-block: 4px;
     }
     .font-cart-head {
         font-size: 12px;
@@ -156,5 +158,29 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
     }
     .width-img-checkout {
         width: 50px;
+    }
+
+    /* TABLAS - Responsive improvisado */
+    td {
+        padding: 0px !important;
+    }
+    .td-empty {
+        width: 0px !important;
+    }
+    .total-price {
+        font-size: 16px !important;
+    }
+    .width-last-td {
+        width: auto;
+        margin-inline: 4px;
+    }
+    .empty-custom-padding, .confirm-custom-padding {
+       font-size: 10px;
+    }
+    .empty-custom-padding img {
+        width: 12px;
+    }
+    .trash {
+        width: 16px;
     }
 }

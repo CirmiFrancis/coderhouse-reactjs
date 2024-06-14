@@ -21,6 +21,13 @@ const Cart = () => {
         )
     }
 
+    const truncateText = (text, maxLength) => {
+        if (text.length <= maxLength) {
+          return text;
+        }
+        return text.slice(0, maxLength) + '...';
+    };
+
     return (
         <div className="container-fluid bg-dark d-flex flex-column align-items-center">
             <div className="row">
@@ -34,12 +41,12 @@ const Cart = () => {
                         <thead>
                             <tr>
                                 <td className="align-middle bg-dark" scope="col"></td>
-                                <td className="align-middle bg-dark text-light font-cart-head font-platform" scope="col">Nombre del Juego</td>
+                                <td className="align-middle bg-dark text-light font-cart-head font-platform" scope="col">Nombre</td>
                                 <td className="align-middle bg-dark text-light font-cart-head font-platform" scope="col">Precio Unitario</td>
                                 <td className="align-middle bg-dark text-light font-cart-head font-platform" scope="col">Cantidad</td>
                                 <td className="align-middle bg-dark text-light font-cart-head font-platform" scope="col">Precio Total</td>
-                                <td className="  bg-dark text-center align-middle px-0 py-3">
-                                    <a href="#" onClick={clear} className="btn btn-light">Vaciar Carrito <img src={trash} alt="Vaciar Carrito" title="Vaciar Carrito" /></a>
+                                <td className="width-last-td bg-dark text-center align-middle px-0 py-3">
+                                    <a href="#" onClick={clear} className="btn btn-light empty-custom-padding">Vaciar <img src={trash} alt="Vaciar Carrito" title="Vaciar Carrito" /></a>
                                 </td>
                             </tr>
                         </thead>
@@ -47,20 +54,20 @@ const Cart = () => {
                             {cart.map(product =>
                                 <tr key={product.id}>
                                     <td className="align-middle bg-dark"><img src={product.image} alt={product.title} className="width-img-cart" /></td>
-                                    <td className="align-middle bg-dark text-light font-cart-body">{product.title}</td>
+                                    <td className="align-middle bg-dark text-light font-cart-body">{truncateText(product.title,15)}</td>
                                     <td className="align-middle bg-dark text-light font-cart-body">${product.price}</td>
                                     <td className="align-middle bg-dark text-light font-cart-body">{product.quantity}</td>
                                     <td className="align-middle bg-dark text-light font-cart-body">${(product.quantity * product.price).toFixed(2)}</td>
-                                    <td className="align-middle bg-dark col-trash">
-                                        <a href="#" onClick={() => {removeItem(product.id)}}><img src={trash2} width={24} className="trash" alt="Eliminar Producto" title="Eliminar Producto" /></a>
+                                    <td className="width-last-td align-middle bg-dark col-trash">
+                                        <a href="#" onClick={() => {removeItem(product.id)}}><img src={trash2} className="trash" alt="Eliminar Producto" title="Eliminar Producto" /></a>
                                     </td>
                                 </tr>
                             )}
                             <tr>
                                 <td colSpan={4} className="align-middle bg-dark text-light"></td>
-                                <td className="bg-dark text-light font-platform fw-bold fs-5 m-0 py-3">${SumaTotalProductos().toFixed(2)}</td>
-                                <td className="align-middle bg-dark text-center px-0">
-                                    <Link to={"/checkout"} className="btn btn-light">Confirmar Compra</Link>
+                                <td className="total-price bg-dark text-light font-platform fw-bold fs-5 m-0 py-3">${SumaTotalProductos().toFixed(2)}</td>
+                                <td className="width-last-td align-middle bg-dark text-center px-0">
+                                    <Link to={"/checkout"} className="btn btn-light confirm-custom-padding">Confirmar</Link>
                                 </td>
                             </tr>
                         </tbody>

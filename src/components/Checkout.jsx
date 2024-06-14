@@ -43,6 +43,13 @@ const Checkout = () => {
         window.scrollTo({top: 0, behavior: 'smooth'}); // al hacer clic en 'generar orden', vuelve al inicio de la página
     }
 
+    const truncateText = (text, maxLength) => {
+        if (text.length <= maxLength) {
+          return text;
+        }
+        return text.slice(0, maxLength) + '...';
+    };
+
     return (
         <div className="container-fluid bg-dark">
             <div className="row">
@@ -53,14 +60,16 @@ const Checkout = () => {
             {orderId ? 
                 "" :
                 <div className="m-0 p-0">
-                    <div className="row d-flex justify-content-center m-0 pt-5">
+                    {/* Código comentado ya que no es necesario y daba problemas con el responsive. */}
+                    
+                    {/* <div className="row d-flex justify-content-center m-0 pt-5">
                         <div className="col-md-6 m-0 p-0">
                             <table className="table">
                                 <tbody>
                                     {cart.map(product =>
                                         <tr key={product.id}>
                                             <td className="bg-dark align-middle"><img src={product.image} alt={product.title} className="width-img-checkout" /></td>
-                                            <td className="bg-dark text-light text-start align-middle">{product.title}</td>
+                                            <td className="width-td-title bg-dark text-light text-start align-middle">{truncateText(product.title, 15)}</td>
                                             <td className="bg-dark text-light text-start align-middle">${product.price}</td>
                                             <td className="bg-dark text-light text-start align-middle">{product.quantity}</td>
                                             <td className="bg-dark text-light text-start align-middle">${(product.quantity * product.price).toFixed(2)}</td>
@@ -73,7 +82,7 @@ const Checkout = () => {
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="row d-flex justify-content-center m-0 p-0">
                         <div className="col-md-6 bg-dark text-light m-0 py-5">
