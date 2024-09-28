@@ -19,6 +19,10 @@ https://gigames.netlify.app/
 
 ![Imagen del Certificado](https://github.com/CirmiFrancis/coderhouse-reactjs/blob/final/certificate.png?raw=true)
 
+### Certificado Adicional: 
+
+![Imagen del Certificado](https://github.com/CirmiFrancis/coderhouse-reactjs/blob/final/certificate2.png?raw=true)
+
 > [!NOTE]
 > #### Curiosidad:
 > Para cumplir con los requisitos de las entregas parciales del curso, recreé de manera casi idéntica el sitio web de Burger King, como se evidencia en el código de la rama 'afters'. Posteriormente, reutilicé dicho código como base para desarrollar el proyecto final, dando lugar a la creación de este e-commerce dedicado a videojuegos.
