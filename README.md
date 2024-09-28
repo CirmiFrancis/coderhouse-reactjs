@@ -19,7 +19,7 @@ https://gigames.netlify.app/
 
 ![Imagen del Certificado](https://github.com/CirmiFrancis/coderhouse-reactjs/blob/final/certificate.png?raw=true)
 
-### Certificado Adicional: 
+### Certificado adicional: 
 
 ![Imagen del Certificado](https://github.com/CirmiFrancis/coderhouse-reactjs/blob/final/certificate2.png?raw=true)
 
