@@ -14,16 +14,16 @@ const Carousel = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={slide1} className="d-block w-100" alt="Ori and the Will of the Wisps"/>
+                    <img src={slide1} className="d-block w-100 carousel-img" alt="Ori and the Will of the Wisps"/>
                 </div>
                 <div className="carousel-item">
-                    <img src={slide2} className="d-block w-100" alt="Final Fantasy VII Rebirth"/>
+                    <img src={slide2} className="d-block w-100 carousel-img" alt="Final Fantasy VII Rebirth"/>
                 </div>
                 <div className="carousel-item">
-                    <img src={slide3} className="d-block w-100" alt="Age of Empires IV"/>
+                    <img src={slide3} className="d-block w-100 carousel-img" alt="Age of Empires IV"/>
                 </div>
                 <div className="carousel-item">
-                    <img src={slide4} className="d-block w-100" alt="Legend of Zelda: Tears of the Kingdom"/>
+                    <img src={slide4} className="d-block w-100 carousel-img" alt="Legend of Zelda: Tears of the Kingdom"/>
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">

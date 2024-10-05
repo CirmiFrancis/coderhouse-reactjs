@@ -11,6 +11,8 @@ const Checkout = () => {
     const [loading, setLoading] = useState(true);
     const {cart, clear, SumaTotalProductos} = useContext(CartContext);
 
+    window.scrollTo({top: 0, behavior: 'smooth'}); // al hacer clic en una sección, te lleva al inicio de la página
+
     const generarOrden = () => {
         if (nombre.length === 0) {
             return false;
@@ -85,7 +87,7 @@ const Checkout = () => {
                     </div> */}
 
                     <div className="row d-flex justify-content-center m-0 p-0">
-                        <div className="col-md-6 bg-dark text-light m-0 py-5">
+                        <div className="col-md-6 bg-dark text-light m-0 pt-5 pb-4">
                             <form>
                                 <div className="mb-3">
                                     <label className="form-label">Nombre</label>

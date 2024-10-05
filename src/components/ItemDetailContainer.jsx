@@ -9,6 +9,8 @@ const ItemDetailContainer = () => {
     const [loading, setLoading] = useState(true);
     const {id} = useParams();
 
+    window.scrollTo({top: 0, behavior: 'smooth'}); // al hacer clic en una sección, te lleva al inicio de la página
+
     // Llamada del Producto desde el Firestore
     useEffect(() => {
         const db = getFirestore();

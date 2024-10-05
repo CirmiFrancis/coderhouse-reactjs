@@ -17,8 +17,8 @@ const AboutUs = () => {
                     </p>
                 </div>
                 
-                <div className="col-md-3 d-flex justify-content-center align-items-center">
-                    <Logo tamanio={192} />
+                <div className="col-md-3 pt-4 pt-md-0 d-flex justify-content-center align-items-center">
+                    <Logo tamanio={160} />
                 </div>
             </div>
             <hr className="text-light m-0 p-0" />

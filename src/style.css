@@ -37,18 +37,17 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
 .navbar-link { /* Enlaces del Navbar: Juegos / Playstation / Xbox / PC / Nintendo */
     font-size: 14px;
     font-family: 'Ubuntu', sans-serif;
+    padding-inline: 16px !important;
     border-radius: 16px;
-    color: white;
 }
 .navbar-link:hover {
     color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.1);
 }
-.navbar-link:focus {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);;
-}
 /* ================================= CAROUSEL ================================= */
+.carousel-img {
+    object-fit: cover;
+}
 .carousel-indicators { /* Indicadores de Slide del Carousel */
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -135,9 +134,17 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
         font-size: 16px;
     }
 }
+@media (max-width: 991.98px){
+    .nav-item {
+        text-align: end;
+    }
+    .navbar-link {
+        display: inline-block;
+    }
+}
 @media (max-width: 767.98px){
-    .width-card {
-        width: 80%;
+    .carousel-img {
+        height: 400px; 
     }
     .img-size {
         width: 80vw;
@@ -182,5 +189,10 @@ html { /* Color del Background del HTML (overflow en el eje Y) */
     }
     .trash {
         width: 16px;
+    }
+}
+@media (max-width: 575.98px){
+    .width-card {
+        width: 80%;
     }
 }

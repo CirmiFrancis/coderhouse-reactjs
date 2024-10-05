@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Item = ({item}) => {
     return (
-        <div className="col-md-2 text-center p-2">
+        <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center p-2">
             <div className="game-card border rounded">
                 <Link to={"/game/" + item.id} className="text-decoration-none">
                     <div className="game-title d-flex justify-content-center rounded">
