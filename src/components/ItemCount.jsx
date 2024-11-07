@@ -28,7 +28,7 @@ const ItemCount = ({stock, onAdd}) => {
                 toast: true,
                 position: "bottom-end",
                 timer: 3000,
-                title: "Agregaste " + `<b style="color: darkred;"> ${counter} </b>` + " producto/s al Carrito de Compra.",
+                title: "Agregaste " + `<b style="color: darkred;"> ${counter} producto/s</b> ` + "al Carrito de Compra.",
                 text: "Stock: " + (itemStock - counter),
                 icon: "success",
                 showConfirmButton: false,

@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Carousel from "./components/Carousel";
+import Recommendations from "./components/Recommendations";
+import Platforms from "./components/Platforms";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import Cart from "./components/Cart";
@@ -18,7 +20,7 @@ const App = () => {
         <BrowserRouter>
           <NavBar/>
           <Routes>
-            <Route path={"/"} element={<> <Carousel/> </>}/>
+            <Route path={"/"} element={<> <Carousel/> <Recommendations/> <Platforms/> </>}/>
             <Route path={"/games"} element={<ItemListContainer/>}/>  
             <Route path={"/platform/:id"} element={<ItemListContainer/>}/>  
             <Route path={"/game/:id"} element={<ItemDetailContainer/>}/> 
