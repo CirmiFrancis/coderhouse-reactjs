@@ -11,19 +11,19 @@ const Platforms = () => {
             <div className="row d-flex justify-content-center align-items-center">
                 <div className="col-6 col-lg-3 d-flex justify-content-end justify-content-lg-center align-items-center p-0">
                     <Link to={"/platform/playstation"} className="text-decoration-none">
-                        <img className="img-platform" src={platformPS} alt="Ícono de Playstation"/>
+                        <img className="img-platform rounded" src={platformPS} alt="Ícono de Playstation"/>
                     </Link>                </div>
                 <div className="col-6 col-lg-3 d-flex justify-content-start justify-content-lg-center align-items-center p-0">
                     <Link to={"/platform/nintendo"} className="text-decoration-none">
-                        <img className="img-platform" src={platformNS} alt="Ícono de Nintendo Switch"/>
+                        <img className="img-platform rounded" src={platformNS} alt="Ícono de Nintendo Switch"/>
                     </Link>                </div>
                 <div className="col-6 col-lg-3 d-flex justify-content-end justify-content-lg-center align-items-center p-0">
                     <Link to={"/platform/xbox"} className="text-decoration-none">
-                        <img className="img-platform" src={platformXBOX} alt="Ícono de Xbox" />
+                        <img className="img-platform rounded" src={platformXBOX} alt="Ícono de Xbox" />
                     </Link>                </div>
                 <div className="col-6 col-lg-3 d-flex justify-content-start justify-content-lg-center align-items-center p-0">
                     <Link to={"/platform/pc"} className="text-decoration-none">
-                        <img className="img-platform" src={platformSTEAM} alt="Ícono de Steam" />
+                        <img className="img-platform rounded" src={platformSTEAM} alt="Ícono de Steam" />
                     </Link>                
                 </div>
             </div>

@@ -17,7 +17,10 @@ const ItemListContainer = () => {
 
         getDocs(consulta).then(resultado => {
             setLoading(false);
-            setItems(resultado.docs.map(producto => ({id:producto.id, ...producto.data()})));
+            const productosOrdenados = resultado.docs
+                .map(producto => ({ id: producto.id, ...producto.data() }))
+                .sort((a, b) => a.title.localeCompare(b.title)); // Ordena alfabéticamente por el título
+            setItems(productosOrdenados);
         });
 
         window.scrollTo({top: 0, behavior: 'smooth'}); // al hacer clic en una sección, te lleva al inicio de la página

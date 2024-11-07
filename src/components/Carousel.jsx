@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Carousel = () => {
     return (
-        <div id="carouselExampleCaptions" className="carousel slide border-top border-bottom">
+        <div id="carouselExampleCaptions" className="carousel slide border-top border-bottom" data-bs-ride="carousel">
             <div className="carousel-indicators bg-indicators m-0">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
