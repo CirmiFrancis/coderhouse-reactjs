@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Carousel from "./components/Carousel";
 import Recommendations from "./components/Recommendations";
+import Catalogue from "./components/Catalogue";
 import Platforms from "./components/Platforms";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
@@ -20,9 +21,9 @@ const App = () => {
         <BrowserRouter>
           <NavBar/>
           <Routes>
-            <Route path={"/"} element={<> <Carousel/> <Recommendations/> <Platforms/> </>}/>
-            <Route path={"/games"} element={<ItemListContainer/>}/>  
-            <Route path={"/platform/:id"} element={<ItemListContainer/>}/>  
+            <Route path={"/"} element={<> <Carousel/> <Recommendations/> <Platforms/> <Catalogue/> </>}/>
+            <Route path={"/games"} element={<> <ItemListContainer/> <Platforms/> </>}/>  
+            <Route path={"/platform/:id"} element={<> <ItemListContainer/> <Catalogue/> </>}/>  
             <Route path={"/game/:id"} element={<ItemDetailContainer/>}/> 
             <Route path={"/cart"} element={<Cart/>}/>
             <Route path={"/checkout"} element={<Checkout/>}/>    

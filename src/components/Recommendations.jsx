@@ -37,9 +37,9 @@ const games = [ // hardcodeado, esta información debería de consumirse de una 
 
 const Recommendations = () => {
     return (
-        <div className="container-fluid text-light bg-dark padding-custom">
-            <h2 className="font-gigames pt-5">¡Recomendaciones!</h2>
-            <div className="row pt-4 pb-5 px-4">
+        <div className="container-fluid text-light bg-dark padding-custom py-5">
+            <h2 className="font-gigames text-center text-sm-start pb-4 m-0">RECOMENDACIONES</h2>
+            <div className="row px-5">
                 {games.map((game) => (
                     <div key={game.id} className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center align-items-center p-2">
                         <div className="game-card border rounded">
@@ -56,7 +56,6 @@ const Recommendations = () => {
                     </div>
                 ))}
             </div>
-            <hr className="text-light m-0 p-0" />
         </div>
     );
 };
