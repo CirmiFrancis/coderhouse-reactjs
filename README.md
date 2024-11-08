@@ -1,7 +1,7 @@
 # GiGames: e-commerce de videojuegos
-Proyecto realizado para el curso de "React JS" de la plataforma Coderhouse. No es del todo Responsive, por lo que se recomienda ver desde una computadora.
+Proyecto realizado para el curso de "React JS" de la plataforma Coderhouse.
 
-'GiGames' es una tienda en línea ficticia dedicada a la venta de videojuegos en formato físico ubicada en Buenos Aires, Argentina. 
+'GiGames' es una tienda ficticia dedicada a la venta de videojuegos en formato físico ubicada en Buenos Aires, Argentina. 
 
 Este sitio web permite:
 - Ver el catálogo completo de videojuegos

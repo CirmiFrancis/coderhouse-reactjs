@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="row py-4">
                 <div className="col-md-9">
                     <p>Copyright © 2024 GiGames</p>
-                    <p className="m-0">El uso de este sitio web implica la aceptación de los <u>Términos y condiciones</u>  y <u>Política de privacidad</u>. Todos los derechos de autor, marcas comerciales y marcas de servicio pertenecen a sus correspondientes propietarios.</p>
+                    <p className="m-0">El uso de este sitio web implica la aceptación de los <u>Términos y condiciones</u>  y <u>Política de privacidad</u>. Todos los derechos de autor, marcas comerciales y marcas de servicio pertenecen a sus correspondientes propietarios. La dirección es ficticia y se utiliza solo con fines ilustrativos.</p>
                 </div>
                 <div className="col-md-3 pt-4 pt-md-0 d-flex justify-content-center align-items-center">
                     <img src={fb} alt="Logo de Facebook" className="mx-2" width={24} />
