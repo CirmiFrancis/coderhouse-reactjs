@@ -35,7 +35,7 @@ const SearchBar = () => {
     }, [searchQuery, productos]);
 
     return (
-        <div className="search-container container-fluid text-light bg-dark padding-custom pt-5">
+        <div className="search-container container-fluid text-light bg-dark padding-custom pt-5 pb-2">
             <input type="text" placeholder="Busca un juego..." className="search-input font-text form-control w-100 mx-auto" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
     
             <div className="search-container position-relative text-decoration-none p-0">
