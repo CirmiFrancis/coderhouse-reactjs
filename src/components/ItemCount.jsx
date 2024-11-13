@@ -27,9 +27,9 @@ const ItemCount = ({stock, onAdd}) => {
             Swal.fire({
                 toast: true,
                 position: "bottom-end",
-                timer: 3000,
-                title: "Agregaste " + `<b style="color: darkred;"> ${counter} producto/s</b> ` + "al Carrito de Compra.",
-                text: "Stock: " + (itemStock - counter),
+                timer: 2000,
+                title: `${counter} juego${counter == 1 ? '' : 's'} agregado${counter == 1 ? '' : 's'}`,
+                text: "Stock restante: " + (itemStock - counter),
                 icon: "success",
                 showConfirmButton: false,
                 timerProgressBar: true
@@ -39,7 +39,7 @@ const ItemCount = ({stock, onAdd}) => {
             Swal.fire({
                 toast: true,
                 position: "bottom-end",
-                timer: 3000,
+                timer: 2000,
                 title: "Lo sentimos, no hay stock.",
                 icon: "error",
                 showConfirmButton: false,
